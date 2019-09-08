@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="CRMPROWebAppAutomationSuite" verbose="1" >
+  <listeners>
+      <listener class-name="com.qa.crm.analyzer.AnnotationTransformer"/>
+      <listener class-name="com.qa.crm.listeners.CustomListener"/>
+  </listeners>  
+  <test name="CRMPROWebAppTest" >
+    <classes>
+       <class name="com.qa.crm.tests.LoginPageTest" />
+    </classes>
+  </test>
+</suite>
