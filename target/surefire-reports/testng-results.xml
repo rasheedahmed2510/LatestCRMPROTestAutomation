@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome browser invoked]]>
+    </line>
+    <line>
+      <![CDATA[Closed the browser]]>
+    </line>
+    <line>
+      <![CDATA[Chrome browser invoked]]>
+    </line>
+    <line>
+      <![CDATA[Closed the browser]]>
+    </line>
+    <line>
+      <![CDATA[Chrome browser invoked]]>
+    </line>
+    <line>
+      <![CDATA[Closed the browser]]>
+    </line>
+    <line>
+      <![CDATA[Chrome browser invoked]]>
+    </line>
+    <line>
+      <![CDATA[Closed the browser]]>
+    </line>
+    <line>
+      <![CDATA[Chrome browser invoked]]>
+    </line>
+    <line>
+      <![CDATA[Closed the browser]]>
+    </line>
+  </reporter-output>
+  <suite name="CRMPROWebAppAutomationSuite" duration-ms="108137" started-at="2019-09-08T13:52:07Z" finished-at="2019-09-08T13:53:55Z">
+    <groups>
+    </groups>
+    <test name="CRMPROWebAppTest" duration-ms="108137" started-at="2019-09-08T13:52:07Z" finished-at="2019-09-08T13:53:55Z">
+      <class name="com.qa.crm.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="setUp" is-config="true" duration-ms="36473" started-at="2019-09-08T19:22:07Z" finished-at="2019-09-08T19:22:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser invoked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCRMLogoInLoginScreenTest()[pri:1, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="verifyCRMLogoInLoginScreenTest" duration-ms="174" started-at="2019-09-08T19:22:43Z" finished-at="2019-09-08T19:22:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCRMLogoInLoginScreenTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="tearDown" is-config="true" duration-ms="1567" started-at="2019-09-08T19:22:44Z" finished-at="2019-09-08T19:22:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="setUp" is-config="true" duration-ms="12801" started-at="2019-09-08T19:22:45Z" finished-at="2019-09-08T19:22:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser invoked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:2, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="verifyLoginPageTitleTest" duration-ms="12" started-at="2019-09-08T19:22:58Z" finished-at="2019-09-08T19:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="tearDown" is-config="true" duration-ms="810" started-at="2019-09-08T19:22:58Z" finished-at="2019-09-08T19:22:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="setUp" is-config="true" duration-ms="15355" started-at="2019-09-08T19:22:59Z" finished-at="2019-09-08T19:23:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser invoked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyToLoginToCRMPROApp()[pri:3, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="verifyToLoginToCRMPROApp" duration-ms="11064" started-at="2019-09-08T19:23:14Z" finished-at="2019-09-08T19:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToLoginToCRMPROApp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="tearDown" is-config="true" duration-ms="901" started-at="2019-09-08T19:23:25Z" finished-at="2019-09-08T19:23:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="setUp" is-config="true" duration-ms="14801" started-at="2019-09-08T19:23:26Z" finished-at="2019-09-08T19:23:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser invoked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySignUpLinkIsDisplayed()[pri:4, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="verifySignUpLinkIsDisplayed" duration-ms="149" started-at="2019-09-08T19:23:41Z" finished-at="2019-09-08T19:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLinkIsDisplayed -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="tearDown" is-config="true" duration-ms="791" started-at="2019-09-08T19:23:41Z" finished-at="2019-09-08T19:23:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="setUp" is-config="true" duration-ms="10261" started-at="2019-09-08T19:23:42Z" finished-at="2019-09-08T19:23:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser invoked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyToClickOnSignUpLink()[pri:5, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="verifyToClickOnSignUpLink" duration-ms="2134" started-at="2019-09-08T19:23:52Z" finished-at="2019-09-08T19:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToClickOnSignUpLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d6e8792]" name="tearDown" is-config="true" duration-ms="769" started-at="2019-09-08T19:23:54Z" finished-at="2019-09-08T19:23:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm.tests.LoginPageTest -->
+    </test> <!-- CRMPROWebAppTest -->
+  </suite> <!-- CRMPROWebAppAutomationSuite -->
+</testng-results>
