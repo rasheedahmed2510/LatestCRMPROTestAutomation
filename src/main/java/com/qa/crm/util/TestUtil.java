@@ -1,8 +1,16 @@
 package com.qa.crm.util;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -10,6 +18,8 @@ import org.openqa.selenium.support.ui.Select;
 import com.qa.crm.base.BaseTest;
 
 public class TestUtil extends BaseTest{
+	
+	public static String RegisterUser_SheetPath="/src/main/java/com/qa/crm/testdata.xlsx";
 	
 	//Switch to frame generic methods
 	public static void switchToFrameByName(String name){
@@ -91,4 +101,29 @@ public class TestUtil extends BaseTest{
 		}
 		return null;
 	}
+	
+	//Get data from excel sheet
+		public static Object[][] getTestData(String sheetName){
+			File file = new File(RegisterUser_SheetPath);
+			String testDataFilePath= file.getAbsolutePath();
+			try {
+				FileInputStream fis= new FileInputStream(testDataFilePath);
+				Workbook wb= WorkbookFactory.create(fis);
+				Sheet sh= wb.getSheet(sheetName);
+				Object[][] data= new Object[sh.getLastRowNum()][sh.getRow(0).getLastCellNum()];
+				for(int i=0; i<sh.getLastRowNum(); i++){
+					for(int k=0; k<sh.getRow(0).getLastCellNum(); k++){
+						data[i][k]= sh.getRow(i+1).getCell(k).toString();
+					}
+				}
+				return data;
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (InvalidFormatException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
 }
