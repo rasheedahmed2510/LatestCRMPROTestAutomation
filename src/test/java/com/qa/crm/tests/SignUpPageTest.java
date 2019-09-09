@@ -1,5 +1,6 @@
 package com.qa.crm.tests;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,6 +33,11 @@ public class SignUpPageTest extends BaseTest {
 	@Test(dataProvider="getCRMPRORegisterUserTestData")
 	public void validateRegisterNewUserWithFreeEditionTest(String firstName, String lastName, String emailAddr, String confirmEmailAddr, String username, String password){
 		cp= sp.registerValidUserWithFreeEdition("Free Edition", firstName, lastName, emailAddr, confirmEmailAddr, username, password);
+	}
+	
+	@Test
+	public void test(){
+		Assert.assertEquals(true, false);
 	}
 	
 	@AfterMethod
