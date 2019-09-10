@@ -8,6 +8,7 @@
   <test name="CRMPROWebAppTest" >
     <classes>
        <class name="com.qa.crm.tests.LoginPageTest" />
+       <class name="com.qa.crm.tests.SignUpPageTest" />
     </classes>
   </test>
 </suite>

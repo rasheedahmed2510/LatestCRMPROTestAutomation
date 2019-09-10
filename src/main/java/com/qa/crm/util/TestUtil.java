@@ -19,7 +19,8 @@ import com.qa.crm.base.BaseTest;
 
 public class TestUtil extends BaseTest{
 	
-	public static String RegisterUser_SheetPath="/src/main/java/com/qa/crm/testdata.xlsx";
+	public static String RegisterUser_SheetPath="C:\\Users\\inrahmed\\git\\LatestCRMPROTestAutomation"
+			+ "\\src\\main\\java\\com\\qa\\crm\\testdata\\CRMPRORegisterUser.xlsx";
 	
 	//Switch to frame generic methods
 	public static void switchToFrameByName(String name){

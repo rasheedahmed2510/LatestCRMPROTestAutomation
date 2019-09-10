@@ -1,6 +1,5 @@
 package com.qa.crm.tests;
 
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,11 +8,13 @@ import org.testng.annotations.Test;
 
 import com.qa.crm.base.BaseTest;
 import com.qa.crm.pages.CompanyInfoAndProfilePage;
+import com.qa.crm.pages.LoginPage;
 import com.qa.crm.pages.SignUpPage;
 import com.qa.crm.util.TestUtil;
 
 public class SignUpPageTest extends BaseTest {
 	
+	LoginPage lp;
 	SignUpPage sp;
 	CompanyInfoAndProfilePage cp;
 	String sheetName= "RegisterValidUser";
@@ -21,6 +22,7 @@ public class SignUpPageTest extends BaseTest {
 	@BeforeMethod
 	public void preCondition(){
 		initializtion();
+		lp = new LoginPage();
 		sp= new SignUpPage();
 	}
 	
@@ -32,12 +34,13 @@ public class SignUpPageTest extends BaseTest {
 	
 	@Test(dataProvider="getCRMPRORegisterUserTestData")
 	public void validateRegisterNewUserWithFreeEditionTest(String firstName, String lastName, String emailAddr, String confirmEmailAddr, String username, String password){
+		if(lp.isSignUpLinkDisplayed()){
+			sp = lp.clickOnSignUpLink();
+			Reporter.log("Sign up link is displayed");
+		}else{
+			Reporter.log("Sign up link is not displayed");
+		}
 		cp= sp.registerValidUserWithFreeEdition("Free Edition", firstName, lastName, emailAddr, confirmEmailAddr, username, password);
-	}
-	
-	@Test
-	public void test(){
-		Assert.assertEquals(true, false);
 	}
 	
 	@AfterMethod

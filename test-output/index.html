@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-CRMPROWebAppAutomationSuite">
-                    <span>C:\Users\Rashid\workspace\CRMPROWebAppAutomation\testng.xml</span>
+                    <span>C:\Users\inrahmed\git\LatestCRMPROTestAutomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-CRMPROWebAppAutomationSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CRMPROWebAppAutomationSuite" title="com.qa.crm.tests.LoginPageTest" hash-for-method="verifyToClickOnSignUpLink">verifyToClickOnSignUpLink</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMPROWebAppAutomationSuite" title="com.qa.crm.tests.SignUpPageTest" hash-for-method="validateRegisterNewUserWithFreeEditionTest(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123)">validateRegisterNewUserWithFreeEditionTest(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CRMPROWebAppAutomationSuite" title="com.qa.crm.tests.SignUpPageTest" hash-for-method="validateRegisterNewUserWithFreeEditionTest(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123)">validateRegisterNewUserWithFreeEditionTest(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-CRMPROWebAppAutomationSuite -->
@@ -120,14 +125,23 @@
           <div class="suite-CRMPROWebAppAutomationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.crm.tests.LoginPageTest</span>
+              <span class="class-name">com.qa.crm.tests.SignUpPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyToClickOnSignUpLink">
-                  </a> <!-- verifyToClickOnSignUpLink -->
-                  <span class="method-name">verifyToClickOnSignUpLink</span>
+                  <a name="validateRegisterNewUserWithFreeEditionTest(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123)">
+                  </a> <!-- validateRegisterNewUserWithFreeEditionTest(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123) -->
+                  <span class="method-name">validateRegisterNewUserWithFreeEditionTest</span>
+                  <span class="parameters">(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRegisterNewUserWithFreeEditionTest(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123)">
+                  </a> <!-- validateRegisterNewUserWithFreeEditionTest(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123) -->
+                  <span class="method-name">validateRegisterNewUserWithFreeEditionTest</span>
+                  <span class="parameters">(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +149,7 @@
         </div> <!-- panel CRMPROWebAppAutomationSuite -->
         <div panel-name="test-xml-CRMPROWebAppAutomationSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Rashid\workspace\CRMPROWebAppAutomation\testng.xml</span>
+            <span class="header-content">C:\Users\inrahmed\git\LatestCRMPROTestAutomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +162,7 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;CRMPROWebAppTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.crm.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.crm.tests.SignUpPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CRMPROWebAppTest --&gt;
 &lt;/suite&gt; &lt;!-- CRMPROWebAppAutomationSuite --&gt;
@@ -188,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyToClickOnSignUpLink')
-data.setCell(0, 2, 'com.qa.crm.tests.LoginPageTest')
-data.setCell(0, 3, 1782);
+data.setCell(0, 1, 'validateRegisterNewUserWithFreeEditionTest')
+data.setCell(0, 2, 'com.qa.crm.tests.SignUpPageTest')
+data.setCell(0, 3, 4515);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateRegisterNewUserWithFreeEditionTest')
+data.setCell(1, 2, 'com.qa.crm.tests.SignUpPageTest')
+data.setCell(1, 3, 3616);
 window.suiteTableData['CRMPROWebAppAutomationSuite']= { tableData: data, tableDiv: 'times-div-CRMPROWebAppAutomationSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-CRMPROWebAppAutomationSuite">
               </div> <!-- times-div-CRMPROWebAppAutomationSuite -->
             </div> <!-- times-div -->
@@ -208,26 +226,25 @@ return data;
             <span class="header-content">Reporter output for CRMPROWebAppAutomationSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateRegisterNewUserWithFreeEditionTest(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Sign up link is displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateRegisterNewUserWithFreeEditionTest(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Sign up link is displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-CRMPROWebAppAutomationSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.crm.tests.LoginPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyToLoginToCRMPROApp</span>
-                <br/>
-                <span class="ignored-method-name">verifySignUpLinkIsDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">verifyCRMLogoInLoginScreenTest</span>
-                <br/>
-                <span class="ignored-method-name">verifyLoginPageTitleTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-CRMPROWebAppAutomationSuite" class="panel">
@@ -236,18 +253,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.crm.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.crm.tests.SignUpPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">preCondition</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyToClickOnSignUpLink</span>
-                <span class="method-start">14690 ms</span>
+                <span class="method-name">validateRegisterNewUserWithFreeEditionTest(Daniel, Bryan, danielbryan123@gmail.com, danielbryan123@gmail.com, daniel123, daniel123)</span>
+                <span class="method-start">14268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16476 ms</span>
+                <span class="method-start">17892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition</span>
+                <span class="method-start">18862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateRegisterNewUserWithFreeEditionTest(Brock, Lesner, brocklesner123@gmail.com, brocklesner123@gmail.com, brocklesner123, brocklesner123)</span>
+                <span class="method-start">30694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35211 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
