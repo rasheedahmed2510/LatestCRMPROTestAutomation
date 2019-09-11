@@ -106,9 +106,9 @@ public class TestUtil extends BaseTest{
 	//Get data from excel sheet
 		public static Object[][] getTestData(String sheetName){
 			File file = new File(RegisterUser_SheetPath);
-			String testDataFilePath= file.getAbsolutePath();
+			//String testDataFilePath= file.getAbsolutePath();
 			try {
-				FileInputStream fis= new FileInputStream(testDataFilePath);
+				FileInputStream fis= new FileInputStream(file);
 				Workbook wb= WorkbookFactory.create(fis);
 				Sheet sh= wb.getSheet(sheetName);
 				Object[][] data= new Object[sh.getLastRowNum()][sh.getRow(0).getLastCellNum()];

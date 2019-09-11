@@ -9,7 +9,7 @@
     <classes>
       <class name="com.qa.crm.tests.SignUpPageTest">
         <methods>
-          <include name="validateRegisterNewUserWithFreeEditionTest"/>
+          <include name="validateRegisterNewUserWithFreeEditionTest" invocation-numbers="0 0 1 1"/>
           <include name="preCondition"/>
           <include name="tearDown"/>
         </methods>

@@ -162,10 +162,18 @@ public class SignUpPage extends BaseTest {
 		if(tickIconForPassword.isDisplayed()){
 			Reporter.log("Password entered successfully in the Sign up page");
 		}
-		submitBtn.click();
-		if(tickIconForTermsAndConditions.isDisplayed()){
-			Reporter.log("Terms and Conditions checkbox is selected in the Sign up page");
+		confirmPassword.sendKeys(pwd);
+		if(tickIconForConfirmPassword.isDisplayed()){
+			Reporter.log("Confirm Password entered successfully in the Sign up page");
 		}
+		if(!termsAndConditionsCheckbox.isSelected()){
+			termsAndConditionsCheckbox.click();
+			if(tickIconForTermsAndConditions.isDisplayed()){
+				Reporter.log("Terms and Conditions checkbox is selected in the Sign up page");
+			}
+		}
+		submitBtn.click();
+		
 		//return new CompanyInfoAndProfilePage();
 		
 		companyName.sendKeys(compName);
