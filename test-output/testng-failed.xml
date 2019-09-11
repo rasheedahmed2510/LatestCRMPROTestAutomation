@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [CRMPROWebAppAutomationSuite]">
-  <listeners>
-    <listener class-name="com.qa.crm.analyzer.AnnotationTransformer"/>
-    <listener class-name="com.qa.crm.listeners.CustomListener"/>
-  </listeners>
-  <test name="CRMPROWebAppTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.qa.crm.tests.SignUpPageTest">
         <methods>
-          <include name="validateRegisterNewUserWithFreeEditionTest" invocation-numbers="0 0 1 1"/>
+          <include name="validateRegisterNewUserWithFreeEditionTest"/>
           <include name="preCondition"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.crm.tests.SignUpPageTest -->
     </classes>
-  </test> <!-- CRMPROWebAppTest(failed) -->
-</suite> <!-- Failed suite [CRMPROWebAppAutomationSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

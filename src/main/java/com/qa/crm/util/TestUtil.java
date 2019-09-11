@@ -57,9 +57,9 @@ public class TestUtil extends BaseTest{
 		sel.selectByIndex(index);
 	}
 	
-	public static void selectByVisibleTextFromDropdown(WebElement element, String val){
+	public static void selectByVisibleTextFromDropdown(WebElement element, String text){
 		Select sel= new Select(element);
-		sel.selectByVisibleText(val);
+		sel.selectByVisibleText(text);
 	}
 	
 	public static void deselectByVisibleTextFromDropdown(WebElement element, String val){
