@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import com.qa.crm.base.BaseTest;
 import com.qa.crm.pages.CompanyInfoAndProfilePage;
+import com.qa.crm.pages.CompleteRegistrationORAddUserPage;
 import com.qa.crm.pages.LoginPage;
 import com.qa.crm.pages.SignUpPage;
 import com.qa.crm.util.TestUtil;
@@ -16,7 +17,7 @@ public class SignUpPageTest extends BaseTest {
 	
 	LoginPage lp;
 	SignUpPage sp;
-	//CompanyInfoAndProfilePage cp;
+	CompanyInfoAndProfilePage cp;
 	String sheetName= "RegisterValidUser";
 	
 	@BeforeMethod
@@ -24,6 +25,7 @@ public class SignUpPageTest extends BaseTest {
 		initializtion();
 		lp = new LoginPage();
 		sp= new SignUpPage();
+		cp = new CompanyInfoAndProfilePage();
 	}
 	
 	@DataProvider
@@ -33,18 +35,14 @@ public class SignUpPageTest extends BaseTest {
 	}
 	
 	@Test(dataProvider="getCRMPRORegisterUserTestData")
-	public void validateRegisterNewUserWithFreeEditionTest(String firstName, String lastName, String emailAddr, String confirmEmailAddr, String username, String password,
-			String companyName, String companyPhone, String companyFax, String companyWebsite, String companyEmail, String companyDescription,
-			String companyAddress, String companyCity, String companyState, String companyPostalCode){
+	public void validateRegisterNewUserWithFreeEditionTest(String firstName, String lastName, String emailAddr, String confirmEmailAddr, String username, String password){
 		if(lp.isSignUpLinkDisplayed()){
 			sp = lp.clickOnSignUpLink();
 			Reporter.log("Sign up link is displayed");
 		}else{
 			Reporter.log("Sign up link is not displayed");
 		}
-		sp.registerValidUserWithFreeEdition("Free Edition", firstName, lastName, emailAddr, confirmEmailAddr, username, password, companyName,
-				companyPhone, companyFax, companyWebsite, companyEmail, companyDescription, companyAddress, companyCity, companyState,
-				companyPostalCode, "United States of America");
+		cp= sp.registerValidUserWithFreeEdition("Free Edition", firstName, lastName, emailAddr, confirmEmailAddr, username, password);
 	}
 	
 	@AfterMethod

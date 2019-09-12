@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CRMPROWebAppTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/4/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 11 17:10:08 IST 2019</td>
+<td>Started on:</td><td>Thu Sep 12 14:45:24 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>171 seconds (171935 ms)</td>
+<tr><td>Total time:</td><td>153 seconds (153058 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,23 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.SignUpPageTest<br>Parameters: Mike, Henry, mike.henry@gmail.com, mike.henry@gmail.com, mike123, mike123, Trade Co., 9.84509845E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
-<a href="#Output-1620459733" onClick='toggleBox("Output-1620459733", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Kate, William, kate.william@yahoo.com, kate.william@yahoo.com, kate123, kate123<br/>
+<a href="#Output-1920305914" onClick='toggleBox("Output-1920305914", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1620459733" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1620459733">
-Sign up link is displayed<br/>
-Free Edition selected successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Last Name entered successfully in the Sign up page<br/>
-Email entered successfully in the Sign up page<br/>
-Confirm Email entered successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Password entered successfully in the Sign up page<br/>
+<a href="#Output-1920305914" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1920305914">
 validateRegisterNewUserWithFreeEditionTest test method failed<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sign Up&apos;)]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -100,8 +92,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 5d311c91f371c3fdb9c79631adc53c0e
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sign Up&apos;)]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -116,11 +108,11 @@ Session ID: 5d311c91f371c3fdb9c79631adc53c0e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620459733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1620459733'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.qa.crm.pages.LoginPage.isSignUpLinkDisplayed(LoginPage.java:49)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:48)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1920305914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920305914'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sign Up&apos;)]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -129,8 +121,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 5d311c91f371c3fdb9c79631adc53c0e
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sign Up&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -149,9 +141,9 @@ Session ID: 5d311c91f371c3fdb9c79631adc53c0e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.qa.crm.pages.LoginPage.isSignUpLinkDisplayed(LoginPage.java:49)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -178,26 +170,18 @@ Session ID: 5d311c91f371c3fdb9c79631adc53c0e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>25</td>
-<td>com.qa.crm.tests.SignUpPageTest@d8355a8</td></tr>
+<td>20</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
 <tr>
-<td title='com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.SignUpPageTest<br>Parameters: John, Stacey, john.stacey@yahoo.com, john.stacey@yahoo.com, johnstacey123, johnstacey123, Trade Co., 9.845198451E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
-<a href="#Output-2129844134" onClick='toggleBox("Output-2129844134", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest()'><b>validateRegisterValidCompanyDetailsWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Trade Co., 9.84509845E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
+<a href="#Output-1280124872" onClick='toggleBox("Output-1280124872", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2129844134" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2129844134">
-Sign up link is displayed<br/>
-Free Edition selected successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Last Name entered successfully in the Sign up page<br/>
-Email entered successfully in the Sign up page<br/>
-Confirm Email entered successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Password entered successfully in the Sign up page<br/>
-validateRegisterNewUserWithFreeEditionTest test method failed<br/>
+<a href="#Output-1280124872" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1280124872">
+validateRegisterValidCompanyDetailsWithFreeEditionTest test method failed<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -206,8 +190,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 0f2cdcfa3b3148b188b519478dbbc3df
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -222,11 +206,11 @@ Session ID: 0f2cdcfa3b3148b188b519478dbbc3df
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2129844134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2129844134'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1280124872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1280124872'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -235,8 +219,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 0f2cdcfa3b3148b188b519478dbbc3df
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -255,9 +239,107 @@ Session ID: 0f2cdcfa3b3148b188b519478dbbc3df
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
+<tr>
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest()'><b>validateRegisterValidCompanyDetailsWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Trade Co., 9.845198451E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
+<a href="#Output-1400973979" onClick='toggleBox("Output-1400973979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1400973979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1400973979">
+validateRegisterValidCompanyDetailsWithFreeEditionTest test method failed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1400973979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1400973979'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -284,26 +366,18 @@ Session ID: 0f2cdcfa3b3148b188b519478dbbc3df
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>23</td>
-<td>com.qa.crm.tests.SignUpPageTest@d8355a8</td></tr>
+<td>20</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
 <tr>
-<td title='com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.SignUpPageTest<br>Parameters: John, Stacey, john.stacey@yahoo.com, john.stacey@yahoo.com, johnstacey123, johnstacey123, Trade Co., 9.845198451E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
-<a href="#Output-687501326" onClick='toggleBox("Output-687501326", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest()'><b>validateRegisterValidCompanyDetailsWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Trade Co., 9.845198451E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
+<a href="#Output-177104018" onClick='toggleBox("Output-177104018", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-687501326" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-687501326">
-Sign up link is displayed<br/>
-Free Edition selected successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Last Name entered successfully in the Sign up page<br/>
-Email entered successfully in the Sign up page<br/>
-Confirm Email entered successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Password entered successfully in the Sign up page<br/>
-validateRegisterNewUserWithFreeEditionTest test method failed<br/>
+<a href="#Output-177104018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-177104018">
+validateRegisterValidCompanyDetailsWithFreeEditionTest test method failed<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -312,8 +386,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 8d6a82d8cad926cb2a30d576d4f97846
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -328,11 +402,11 @@ Session ID: 8d6a82d8cad926cb2a30d576d4f97846
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace687501326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace687501326'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177104018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177104018'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -341,8 +415,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 8d6a82d8cad926cb2a30d576d4f97846
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -361,9 +435,9 @@ Session ID: 8d6a82d8cad926cb2a30d576d4f97846
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -390,8 +464,37 @@ Session ID: 8d6a82d8cad926cb2a30d576d4f97846
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>25</td>
-<td>com.qa.crm.tests.SignUpPageTest@d8355a8</td></tr>
+<td>20</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Lindsey, Lohan, lindsey.lohan@gmail.com, lindsey.lohan@gmail.com, lindsey123, lindsey123<br/>
+<a href="#Output-840083671" onClick='toggleBox("Output-840083671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-840083671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-840083671">
+Sign up link is displayed<br/>
+Free Edition selected successfully in the Sign up page<br/>
+First Name entered successfully in the Sign up page<br/>
+Last Name entered successfully in the Sign up page<br/>
+Email entered successfully in the Sign up page<br/>
+Confirm Email entered successfully in the Sign up page<br/>
+First Name entered successfully in the Sign up page<br/>
+Password entered successfully in the Sign up page<br/>
+Confirm Password entered successfully in the Sign up page<br/>
+Terms and Conditions checkbox is selected in the Sign up page<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -401,22 +504,8 @@ Session ID: 8d6a82d8cad926cb2a30d576d4f97846
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.SignUpPageTest<br>Parameters: Mike, Henry, mike.henry@gmail.com, mike.henry@gmail.com, mike123, mike123, Trade Co., 9.84509845E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0<br/>
-<a href="#Output-1635378213" onClick='toggleBox("Output-1635378213", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1635378213" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1635378213">
-Sign up link is displayed<br/>
-Free Edition selected successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Last Name entered successfully in the Sign up page<br/>
-Email entered successfully in the Sign up page<br/>
-Confirm Email entered successfully in the Sign up page<br/>
-First Name entered successfully in the Sign up page<br/>
-Password entered successfully in the Sign up page<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest()'><b>validateRegisterNewUserWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Kate, William, kate.william@yahoo.com, kate.william@yahoo.com, kate123, kate123</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sign Up&apos;)]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -425,8 +514,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: d67daad6127f7b8ecfa33cabf2b9d42c
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sign Up&apos;)]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -441,11 +530,11 @@ Session ID: d67daad6127f7b8ecfa33cabf2b9d42c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1635378213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1635378213'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]&quot;}
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.qa.crm.pages.LoginPage.isSignUpLinkDisplayed(LoginPage.java:49)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:48)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1037163664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037163664'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Sign Up&apos;)]&quot;}
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -454,8 +543,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: d67daad6127f7b8ecfa33cabf2b9d42c
-*** Element info: {Using=xpath, value=//i[@class=&apos;form-control-feedback glyphicon glyphicon-ok&apos; and @data-bv-icon-for=&apos;agreeTerms&apos;]}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Sign Up&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -474,9 +563,9 @@ Session ID: d67daad6127f7b8ecfa33cabf2b9d42c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.qa.crm.pages.SignUpPage.registerValidUserWithFreeEdition(SignUpPage.java:166)
-	at com.qa.crm.tests.SignUpPageTest.validateRegisterNewUserWithFreeEditionTest(SignUpPageTest.java:45)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.qa.crm.pages.LoginPage.isSignUpLinkDisplayed(LoginPage.java:49)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterNewUserWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -503,8 +592,99 @@ Session ID: d67daad6127f7b8ecfa33cabf2b9d42c
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>25</td>
-<td>com.qa.crm.tests.SignUpPageTest@d8355a8</td></tr>
+<td>20</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
+<tr>
+<td title='com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest()'><b>validateRegisterValidCompanyDetailsWithFreeEditionTest</b><br>Test class: com.qa.crm.tests.CompanyInfoAndProfilePageTest<br>Parameters: Trade Co., 9.84509845E9, 1.3235551234E10, http://www.tradeco.com, trade@tradeco.com, Trading company, Seattle State Street, Seattle, Washington, 90001.0</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281421502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281421502'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;company_name&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HIBAIL55565&apos;, ip: &apos;10.99.234.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\inrahmed\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 823f7d7f2ce6caef29a74b3089cac431
+*** Element info: {Using=xpath, value=//input[@type=&apos;company_name&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.qa.crm.pages.CompanyInfoAndProfilePage.registerValidCompanyDetailsWithFreeEdition(CompanyInfoAndProfilePage.java:71)
+	at com.qa.crm.tests.CompanyInfoAndProfilePageTest.validateRegisterValidCompanyDetailsWithFreeEditionTest(CompanyInfoAndProfilePageTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.qa.crm.tests.CompanyInfoAndProfilePageTest@46d56d67</td></tr>
 </table><p>
 </body>
 </html>

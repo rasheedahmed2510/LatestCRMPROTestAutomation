@@ -6,9 +6,8 @@
       <listener class-name="com.qa.crm.listeners.CustomListener"/>
   </listeners>  
   <test name="CRMPROWebAppTest" >
-    <classes>
-    
-       <class name="com.qa.crm.tests.SignUpPageTest" />
+    <classes> 
+       <class name="com.qa.crm.tests.CompanyInfoAndProfilePageTest" />
     </classes>
   </test>
 </suite>

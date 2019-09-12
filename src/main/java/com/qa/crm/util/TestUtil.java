@@ -4,13 +4,18 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -126,5 +131,38 @@ public class TestUtil extends BaseTest{
 				e.printStackTrace();
 			}
 			return null;
+		}
+		
+		
+		//Get test data based on row wise
+		public void getRowWiseTestData(String sheetName, int row, int col) throws InvalidFormatException, IOException{
+			File file= new File(RegisterUser_SheetPath);
+			FileInputStream fis = new FileInputStream(file);
+			Workbook wb= WorkbookFactory.create(fis);
+			int sheetCount= wb.getNumberOfSheets();
+			System.out.println("Workbook has "+sheetCount+" sheets");
+			Sheet sh= wb.getSheet(sheetName);
+			
+			DataFormatter dataFormatter= new DataFormatter();
+			System.out.println("\n\nIterating over Rows and Columns using Iterator\n");
+			Iterator<Row> rowIterator= sh.rowIterator();
+			while(rowIterator.hasNext()){
+				Row row1=rowIterator.next();
+				//iterate over cols
+				Iterator<Cell> cellIterator= row1.cellIterator();
+				while(cellIterator.hasNext()){
+					Cell cell= cellIterator.next();
+					String cellValue= dataFormatter.formatCellValue(cell);
+				}
+				System.out.println();
+			}
+		}
+		
+		public WebElement findElementByLocator(By locator){
+			return driver.findElement(locator);
+		}
+		
+		public List<WebElement> findElementsByLocator(By locator){
+			return driver.findElements(locator);
 		}
 }

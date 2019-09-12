@@ -7,13 +7,13 @@
   </listeners>
   <test name="CRMPROWebAppTest(failed)">
     <classes>
-      <class name="com.qa.crm.tests.SignUpPageTest">
+      <class name="com.qa.crm.tests.CompanyInfoAndProfilePageTest">
         <methods>
-          <include name="validateRegisterNewUserWithFreeEditionTest" invocation-numbers="0 0 1 1"/>
+          <include name="validateRegisterNewUserWithFreeEditionTest" invocation-numbers="1 1"/>
+          <include name="validateRegisterValidCompanyDetailsWithFreeEditionTest" invocation-numbers="0 0 1 1"/>
           <include name="preCondition"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.crm.tests.SignUpPageTest -->
+      </class> <!-- com.qa.crm.tests.CompanyInfoAndProfilePageTest -->
     </classes>
   </test> <!-- CRMPROWebAppTest(failed) -->
 </suite> <!-- Failed suite [CRMPROWebAppAutomationSuite] -->
